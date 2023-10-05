@@ -66,9 +66,9 @@ torch.save(models, 'ModelTest.pt')
 
 # 读取训练好的模型
 model = torch.load('ModelTest.pt')
-x_test = torch.from_numpy(data[404:])
+x_test = torch.from_numpy(data[301:])
 x_test = x_test.type(torch.float32)
-y_test = torch.from_numpy(target[404:])
+y_test = torch.from_numpy(target[301:])
 y_test = y_test.type(torch.float32)
 models.eval()
 
